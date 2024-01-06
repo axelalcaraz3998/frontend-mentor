@@ -81,6 +81,22 @@ body {
   border-bottom: 1px solid var(--light-pink);
 }
 
+.faq-question-title-icon-minus {
+  display: none;
+}
+
+.faq-question-title-icon-plus {
+  display: block;
+}
+
+.faq-question-container.active .faq-question-title-icon-plus {
+  display: none;
+}
+
+.faq-question-container.active .faq-question-title-icon-minus {
+  display: block;
+}
+
 .faq-question-container-title-container {
   display: flex;
   align-items: center;
