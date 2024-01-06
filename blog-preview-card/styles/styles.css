@@ -1,0 +1,151 @@
+/* Variables */
+:root {
+  --primary-color: #f4d04e;
+  --neutral-white: #ffffff;
+  --neutral-grey: #808080;
+  --neutral-black: #121212;
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+
+  margin-top: 4.2rem;
+}
+
+/* Styling */
+body {
+  background-color: var(--primary-color);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 38rem;
+  padding: 2.4em;
+
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 0 0 var(--neutral-black);
+  background-color: var(--neutral-white);
+}
+
+.card-top,
+.card-bottom {
+  width: 100%;
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2.4rem;
+}
+
+.card-illustration {
+  width: 100%;
+
+  border-radius: 1rem;
+}
+
+.card-tag {
+  width: 8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.8rem 1.2rem;
+
+  border: none;
+  border-radius: 0.6rem;
+  background-color: var(--primary-color);
+
+  margin-bottom: 1.2rem;
+}
+
+.card-published-date {
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  margin-bottom: 1.4rem;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 1.6rem;
+}
+
+.card-description {
+  font-size: 1.6rem;
+  color: var(--neutral-grey);
+  line-height: 1.4;
+
+  margin-bottom: 1.4rem;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.author-avatar {
+  width: 4.6rem;
+  height: 4.6rem;
+}
+
+.author-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 26.25em) {
+  .card {
+    width: 32rem;
+    padding: 1.6rem;
+  }
+
+  .card-tag,
+  .card-description {
+    font-size: 1.4rem;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+
+  .author-name {
+    font-size: 1.2rem;
+  }
+}
