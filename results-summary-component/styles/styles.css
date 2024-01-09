@@ -45,11 +45,25 @@ body {
 }
 
 /* Styles */
+body {
+  height: 100vh;
+}
+
 .container {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3.6rem 0;
 }
 
 .summary {
@@ -213,4 +227,59 @@ body {
 .btn-continue:hover {
   cursor: pointer;
   background-color: var(--color-btn-active);
+}
+
+/* Media queries  */
+@media screen and (max-width: 42.5em) {
+  .summary {
+    width: 36rem;
+    grid-template-columns: 1fr;
+
+    box-shadow: 1rem 1rem 2rem rgba(120, 87, 255, 0.15);
+  }
+
+  .left,
+  .right {
+    padding: 2.4rem 1.8rem;
+  }
+
+  .left {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .left-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .result {
+    width: 14rem;
+    height: 14rem;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .description {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .description h1 {
+    margin-bottom: 0.8rem;
+  }
+
+  .summary-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .summary-item {
+    padding: 1.5rem;
+  }
+
+  .summary-item:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+
+  .summary-item:last-child {
+    margin-bottom: 2.8rem;
+  }
 }
