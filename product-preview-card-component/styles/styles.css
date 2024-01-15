@@ -1,0 +1,148 @@
+/* Variables */
+:root {
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-dark-cyan-shade: hsl(159, 48%, 24%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-very-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+
+  margin-top: 4.2rem;
+}
+
+/* Styling */
+body {
+  background-color: var(--color-cream);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 62rem;
+
+  border-radius: 1.2rem;
+  background-color: var(--color-white);
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card__image--desktop {
+  width: 100%;
+  height: 100%;
+}
+
+.card__image--mobile {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.card__content {
+  padding: 3.2rem 3.6rem;
+}
+
+.card__product-name {
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  color: var(--color-dark-grayish-blue);
+
+  margin-bottom: 2.6rem;
+}
+
+.card__product-title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--color-very-dark-blue);
+
+  margin-bottom: 2.6rem;
+}
+
+.card__description {
+  line-height: 1.6;
+  color: var(--color-dark-grayish-blue);
+
+  margin-bottom: 3.2rem;
+}
+
+.card__price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--color-dark-cyan);
+
+  margin-bottom: 3.2rem;
+}
+
+.card__price-before {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-dark-grayish-blue);
+  text-decoration: line-through;
+
+  margin-left: 1.2rem;
+}
+
+.btn {
+  width: 100%;
+  height: 5.2rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  border: none;
+  background: none;
+  border-radius: 0.8rem;
+}
+
+.btn--card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  background-color: var(--color-dark-cyan);
+  color: var(--color-white);
+}
+
+/* Active states */
+.btn--card:hover {
+  cursor: pointer;
+  background-color: var(--color-dark-cyan-shade);
+}

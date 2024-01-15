@@ -1,36 +1,74 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Perfume
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-  Gabrielle Essence Eau De Parfum
+    <title>Product preview card component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__image-container">
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Perfume Gabrielle Essence Eau De Parfum"
+            class="card__image--desktop"
+          />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Perfume Gabrielle Essence Eau De Parfum"
+            class="card__image--mobile"
+          />
+        </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+        <div class="card__content">
+          <p class="card__product-name">Perfume</p>
+          <h1 class="card__product-title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="card__description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="card__price">
+            $149.99 <span class="card__price-before">$169.99</span>
+          </p>
 
-  $149.99
-  $169.99
+          <button class="btn btn--card">
+            <img src="./images/icon-cart.svg" alt="Cart icon" />
+            <span>Add to Cart</span>
+          </button>
+        </div>
+      </div>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/klepzs" target="_blank">klepzs</a>.
+      </div>
+    </div>
+  </body>
 </html>
