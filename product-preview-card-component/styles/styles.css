@@ -146,3 +146,45 @@ body {
   cursor: pointer;
   background-color: var(--color-dark-cyan-shade);
 }
+
+/* Media queries */
+@media screen and (max-width: 42.5em) {
+  .card {
+    width: 42rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card__image--desktop {
+    display: none;
+  }
+
+  .card__image--mobile {
+    display: block;
+  }
+
+  .card__content {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .card__product-name {
+    margin-bottom: 1.6rem;
+  }
+
+  .card__product-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .card__description {
+    margin-bottom: 2.4rem;
+  }
+
+  .card__price {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 28.75em) {
+  .card {
+    width: 34rem;
+  }
+}
