@@ -149,3 +149,19 @@ body {
   background-color: var(--color-neutral-white);
   color: var(--color-primary-orange);
 }
+
+/* Media queries */
+@media screen and (max-width: 28.75em) {
+  .rating-container {
+    width: 34rem;
+  }
+
+  .rating-rate {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .btn-rating {
+    padding: 1.2rem 0;
+  }
+}
