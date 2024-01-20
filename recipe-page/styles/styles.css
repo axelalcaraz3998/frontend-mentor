@@ -182,3 +182,25 @@ body {
 .recipe-nutrition-table-col strong {
   color: var(--color-nutmeg);
 }
+
+@media screen and (max-width: 38.75em) {
+  .container {
+    padding: 0;
+  }
+
+  .recipe {
+    width: 100%;
+
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .recipe-img {
+    border-radius: 0;
+  }
+
+  .recipe-content {
+    padding: 0 3.2rem;
+  }
+}
