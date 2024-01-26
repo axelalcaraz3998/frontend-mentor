@@ -168,3 +168,18 @@ body {
   cursor: pointer;
   filter: opacity(0.75);
 }
+
+/* Media queries */
+@media screen and (max-width: 28.75em) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .order-card {
+    width: 34rem;
+  }
+
+  .order-content-container {
+    padding: 3.2rem 1.6rem;
+  }
+}
