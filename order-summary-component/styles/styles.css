@@ -1,0 +1,170 @@
+/* Variables */
+:root {
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  text-align: center;
+
+  margin-top: 4.2rem;
+}
+
+/* Styles */
+body {
+  background-color: var(--color-pale-blue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.order-card {
+  width: 42rem;
+
+  border-radius: 2rem;
+  background-color: var(--color-very-pale-blue);
+}
+
+.order-img-container {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  overflow: hidden;
+}
+
+.order-img {
+  width: 100%;
+}
+
+.order-content-container {
+  text-align: center;
+
+  padding: 5.2rem 3.6rem;
+}
+
+.order-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--color-dark-blue);
+
+  margin-bottom: 2.6rem;
+}
+
+.order-description {
+  color: var(--color-desaturated-blue);
+  line-height: 1.5;
+
+  margin-bottom: 2.4rem;
+}
+
+.order-plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2.4rem 1.6rem;
+
+  border-radius: 1.2rem;
+  background-color: hsla(225, 100%, 94%, 0.4);
+
+  margin-bottom: 3.6rem;
+}
+
+.order-plan-container > div {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.order-plan-details {
+  text-align: start;
+}
+
+.order-plan-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--color-dark-blue);
+
+  margin-bottom: 0.8rem;
+}
+
+.order-plan-price {
+  color: var(--color-desaturated-blue);
+}
+
+.order-plan-change:link,
+.order-plan-change:visited {
+  font-weight: 700;
+  color: var(--color-bright-blue);
+}
+
+.order-payment,
+.order-cancel {
+  width: 100%;
+  display: block;
+
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+
+  border: none;
+  background: none;
+  border-radius: 1.2rem;
+  padding: 1.8rem 0;
+}
+
+.order-payment {
+  background-color: var(--color-bright-blue);
+  color: var(--color-very-pale-blue);
+  box-shadow: 0 1.25rem 2.5rem 0 hsla(245, 75%, 52%, 0.25);
+
+  margin-bottom: 1.6rem;
+}
+
+.order-cancel {
+  color: var(--color-desaturated-blue);
+}
+
+/* Active states */
+.order-plan-change:hover {
+  text-decoration: none;
+}
+
+.order-payment:hover,
+.order-cancel:hover {
+  cursor: pointer;
+  filter: opacity(0.75);
+}
