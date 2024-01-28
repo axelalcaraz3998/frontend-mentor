@@ -63,6 +63,10 @@ body {
   padding: 5.2rem 4.2rem;
 }
 
+.card__column-content {
+  margin-bottom: 9.6rem;
+}
+
 .card__image {
   margin-bottom: 2.6rem;
 }
@@ -80,8 +84,6 @@ body {
 
 .card__text {
   line-height: 1.6;
-
-  margin-bottom: 9.6rem;
 }
 
 .btn {
@@ -128,4 +130,26 @@ body {
   background: none;
   border: 1px solid var(--color-light-gray);
   color: var(--color-transparent-white);
+}
+
+/* Media queries */
+@media screen and (max-width: 61.25em) {
+  .container {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+    margin: 6.4rem 0;
+  }
+
+  .card {
+    width: 34rem;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .card__column-content {
+    margin-bottom: 4.2rem;
+  }
 }
