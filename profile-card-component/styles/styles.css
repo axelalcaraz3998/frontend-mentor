@@ -1,7 +1,147 @@
+/* Variables */
+:root {
+  --color-cyan: hsl(185, 75%, 39%);
+  --color-desaturated-blue: hsl(229, 23%, 23%);
+  --color-grayish-blue: hsl(227, 10%, 46%);
+  --color-gray: hsl(0, 0%, 59%);
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
 /* Attribution */
 .attribution {
   font-size: 1.2rem;
   text-align: center;
 
   margin-top: 4.2rem;
+}
+
+/* Styles */
+body {
+  background: url("../images/bg-pattern-top.svg") -50% 50% no-repeat,
+    url("../images/bg-pattern-bottom.svg") 150% -50% no-repeat;
+  background-color: var(--color-cyan);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 35rem;
+
+  position: relative;
+  background-color: #fff;
+  border-radius: 2rem;
+
+  overflow: hidden;
+}
+
+.card__top,
+.card-img {
+  width: 100%;
+}
+
+.card__bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4.6rem 0 0 0;
+}
+
+.card__bottom > div {
+  width: 100%;
+  text-align: center;
+
+  margin-top: 2.6rem;
+}
+
+.card-user {
+  position: absolute;
+  top: -5rem;
+
+  border-radius: 50%;
+  border: 6px solid #fff;
+
+  margin-bottom: 2.4rem;
+}
+
+.card-user-info {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  margin-bottom: 0.8rem;
+}
+
+.card-user-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-user-age {
+  font-size: 2rem;
+  color: var(--color-grayish-blue);
+}
+
+.card-user-location {
+  font-size: 1.6rem;
+  color: var(--color-grayish-blue);
+
+  margin-bottom: 1.2rem;
+}
+
+.card-user-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2.6rem;
+  border-top: 1px solid var(--color-grayish-blue);
+}
+
+.card-user-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card-user-stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-user-stat-label {
+  font-size: 1.2rem;
+  color: var(--color-grayish-blue);
+  letter-spacing: 0.125rem;
 }
