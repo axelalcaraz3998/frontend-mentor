@@ -1,0 +1,131 @@
+/* Variables */
+:root {
+  --color-orange: hsl(31, 77%, 52%);
+  --color-cyan: hsl(184, 100%, 22%);
+  --color-dark-cyan: hsl(179, 100%, 13%);
+
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-transparent-white);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+
+  margin-top: 4.2rem;
+}
+
+/* Styles */
+body {
+  background-color: var(--color-light-gray);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 96rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.card__column {
+  padding: 5.2rem 4.2rem;
+}
+
+.card__image {
+  margin-bottom: 2.6rem;
+}
+
+.card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  color: var(--color-light-gray);
+
+  margin-bottom: 2.6rem;
+}
+
+.card__text {
+  line-height: 1.6;
+
+  margin-bottom: 9.6rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  padding: 1.6rem 3.6rem;
+
+  background: none;
+  border: none;
+  background-color: var(--color-light-gray);
+  border: 1px solid transparent;
+  border-radius: 100rem;
+}
+
+/* Colors */
+.sedans {
+  background-color: var(--color-orange);
+}
+
+.suvs {
+  background-color: var(--color-cyan);
+}
+
+.luxury {
+  background-color: var(--color-dark-cyan);
+}
+
+.btn-sedans {
+  color: var(--color-orange);
+}
+
+.btn-suv {
+  color: var(--color-cyan);
+}
+
+.btn-luxury {
+  color: var(--color-dark-cyan);
+}
+
+/* Active states */
+.btn:hover {
+  background: none;
+  border: 1px solid var(--color-light-gray);
+  color: var(--color-transparent-white);
+}
