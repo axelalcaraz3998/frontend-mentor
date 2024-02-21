@@ -29,6 +29,11 @@ body {
   line-height: 1;
 }
 
+/* Helper */
+.no-display {
+  display: none;
+}
+
 /* Attribution */
 .attribution {
   font-size: 1.2rem;
@@ -37,18 +42,7 @@ body {
   margin-top: 4.2rem;
 }
 
-/* Helper */
-.visually-hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.no-display {
-  display: none;
-}
-
 /* Styles */
-
 .container {
   width: 144rem;
   margin: 3.1rem auto;
@@ -111,6 +105,10 @@ body {
   background: none;
 }
 
+.form input.error {
+  border: 1px solid var(--color-soft-red);
+}
+
 .form input:focus {
   outline: none;
 }
@@ -147,6 +145,14 @@ body {
   font-size: 1.4rem;
   color: var(--color-soft-red);
 
+  visibility: hidden;
+  opacity: 0;
+
   margin-left: 2.4rem;
   margin-top: 1.2rem;
+}
+
+.form p.error {
+  visibility: visible;
+  opacity: 1;
 }

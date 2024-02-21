@@ -47,13 +47,15 @@
             and our launch deals.
           </p>
 
-          <form class="form">
-            <input type="email" placeholder="Email Address" />
+          <form class="form" autocomplete="off" id="form-container">
+            <input id="email-input" type="text" placeholder="Email Address" />
             <button type="submit">
               <img src="./images/icon-arrow.svg" alt="Arrow" />
             </button>
 
-            <p class="visually-hidden">Please provide a valid email</p>
+            <p id="error-msg" class="visually-hidden">
+              Please provide a valid email
+            </p>
           </form>
         </div>
 
