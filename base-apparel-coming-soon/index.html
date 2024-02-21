@@ -33,10 +33,14 @@
   <body>
     <div class="container">
       <div class="content">
-        <div>
-          <img src="./images/logo.svg" alt="Logo" />
+        <div class="content__left">
+          <img src="./images/logo.svg" alt="Logo" class="logo" />
 
-          <h1 class="title">We're coming soon</h1>
+          <h1 class="title">
+            <span>We're</span><br />
+            coming<br />
+            soon
+          </h1>
           <p class="description">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
@@ -45,19 +49,20 @@
 
           <form class="form">
             <input type="email" placeholder="Email Address" />
-            <img src="./images/icon-error.svg" alt="Error" />
             <button type="submit">
               <img src="./images/icon-arrow.svg" alt="Arrow" />
             </button>
+
+            <p class="visually-hidden">Please provide a valid email</p>
           </form>
         </div>
 
-        <div>
+        <div class="content__right">
           <img src="./images/hero-desktop.jpg" alt="Hero desktop" />
           <img
             src="./images/hero-mobile.jpg"
             alt="Hero mobile"
-            class="hidden"
+            class="no-display"
           />
         </div>
       </div>
