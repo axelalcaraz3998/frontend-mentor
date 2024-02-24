@@ -49,22 +49,26 @@
         <form class="form" autocomplete="off">
           <div>
             <input type="text" placeholder="First Name" id="fName-input" />
-            <p class="error-msg">First Name cannot be empty</p>
+            <p id="fName-error" class="error-msg">First Name cannot be empty</p>
           </div>
 
           <div>
             <input type="text" placeholder="Last Name" id="lName-input" />
-            <p class="error-msg">Last Name cannot be empty</p>
+            <p id="lName-error" class="error-msg">Last Name cannot be empty</p>
           </div>
 
           <div>
             <input type="email" placeholder="Email Address" id="email-input" />
-            <p class="error-msg">Looks like this is not an email</p>
+            <p id="email-error" class="error-msg">
+              Looks like this is not an email
+            </p>
           </div>
 
           <div>
             <input type="password" placeholder="Password" id="password-input" />
-            <p class="error-msg">Password cannot be empty</p>
+            <p id="password-error" class="error-msg">
+              Password cannot be empty
+            </p>
           </div>
 
           <button type="submit" class="btn">Claim your free trial</button>
