@@ -1,3 +1,14 @@
+/* Variables */
+:root {
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%);
+  --color-grayish-blue: hsl(246, 25%, 77%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* Global reset */
 *,
 *::before,
 *::after {
@@ -16,4 +27,144 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+
+  margin-top: 4.2rem;
+}
+
+/* Styles */
+body {
+  background-color: var(--color-red);
+  background-image: url("../images/bg-intro-desktop.png");
+}
+
+.content {
+  width: 124rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  margin: 9.6rem auto;
+}
+
+.left {
+  padding-right: 9.6rem;
+}
+
+.title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-white);
+
+  margin-bottom: 3.2rem;
+}
+
+.description {
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+.free-trial {
+  width: 56rem;
+  height: 5.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-white);
+
+  border-radius: 0.8rem;
+  background-color: var(--color-blue);
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 3.2rem;
+}
+
+.free-trial span {
+  font-weight: 700;
+}
+
+.form {
+  width: 56rem;
+  padding: 4.2rem;
+
+  border-radius: 0.8rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.form div {
+  margin-bottom: 2.4rem;
+}
+
+.form input {
+  width: 100%;
+  height: 5.8rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  padding: 1.2rem 2.4rem;
+
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-grayish-blue);
+}
+
+.form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.form input:hover,
+.form input:focus {
+  outline: none;
+  border-color: var(--color-dark-blue);
+}
+
+.error-msg {
+  font-size: 1.2rem;
+  text-align: right;
+  font-style: italic;
+  color: var(--color-red);
+
+  margin-top: 0.8rem;
+
+  display: none;
+}
+
+.btn {
+  width: 100%;
+  height: 5.8rem;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--color-white);
+
+  border: none;
+  border-radius: 0.8rem;
+  background-color: var(--color-green);
+  box-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.4);
+
+  margin-bottom: 2.4rem;
+}
+
+.terms {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-grayish-blue);
+}
+
+.terms a {
+  color: var(--color-red);
+  text-decoration: none;
 }
