@@ -1,0 +1,164 @@
+/* Variables */
+:root {
+  --color-blue: hsl(223, 87%, 63%);
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-light-red: hsl(354, 100%, 66%);
+  --color-gray: hsl(0, 0%, 59%);
+  --color-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-gray);
+  margin-top: 0.8rem;
+}
+
+/* Styles */
+.container {
+  max-width: 62rem;
+  margin: 4.6rem auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.logo {
+  margin-bottom: 4.2rem;
+}
+
+.title {
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: var(--color-gray);
+
+  margin-bottom: 2.4rem;
+}
+
+.title span {
+  font-weight: 700;
+  color: var(--color-very-dark-blue);
+}
+
+.message {
+  margin-bottom: 2.4rem;
+}
+
+.form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.email-input {
+  width: 100%;
+  padding: 1.8rem 2.4rem;
+  font-size: 1.6rem;
+
+  border: 1px solid var(--color-pale-blue);
+  border-radius: 10rem;
+}
+
+.email-input::placeholder {
+  font-size: 1.6rem;
+  color: var(--color-gray);
+}
+
+.email-input:focus {
+  outline: none;
+  border: 1px solid var(--color-blue);
+}
+
+.submit-btn {
+  font-size: 1.6rem;
+  width: 30rem;
+  height: 5.6rem;
+  color: #fff;
+
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--color-blue);
+  box-shadow: 0 0.6rem 0.6rem rgb(79, 125, 243, 0.2);
+}
+
+.hero {
+  margin-bottom: 6.4rem;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer {
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.socials a {
+  text-decoration: none;
+
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon path {
+  fill: var(--color-blue);
+}
+
+.socials a:hover {
+  background-color: var(--color-blue);
+}
+
+.socials a:hover .icon path {
+  fill: #fff;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-gray);
+}
