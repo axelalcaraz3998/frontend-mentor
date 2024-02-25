@@ -86,3 +86,53 @@ body {
   background-color: var(--color-soft-magenta);
   color: #fff;
 }
+
+/* Media queries */
+@media screen and (max-width: 90em) {
+  .right {
+    padding: 0 0 0 4.2rem;
+  }
+}
+
+@media screen and (max-width: 77.5em) {
+  .container {
+    max-width: 64rem;
+    flex-direction: column;
+
+    background-image: none;
+  }
+
+  .left {
+    background-image: url("./../images/bg-mobile.svg");
+    background-size: cover;
+    margin-bottom: 5.2rem;
+  }
+
+  .right {
+    text-align: center;
+    padding: 0 4.6rem;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .submit-btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .container {
+    max-width: 42rem;
+    padding: 2.4rem;
+  }
+
+  .right {
+    padding: 0;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+}
