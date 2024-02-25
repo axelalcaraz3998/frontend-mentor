@@ -162,3 +162,28 @@ body {
   font-size: 1.4rem;
   color: var(--color-gray);
 }
+
+/* Media queries */
+@media screen and (max-width: 40em) {
+  .container {
+    max-width: 34rem;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .message {
+    font-size: 1.6rem;
+  }
+
+  .form div {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .email-input,
+  .submit-btn {
+    width: 100%;
+  }
+}
