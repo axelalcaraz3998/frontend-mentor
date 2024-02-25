@@ -1,50 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Join our community
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
 
-  30-day, hassle-free money back guarantee
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+    <title>Single Price Grid Component</title>
+  </head>
 
-  Monthly Subscription
+  <body>
+    <div class="container">
+      <main class="card">
+        <div class="card__header">
+          <h1 class="card__title">Join our community</h1>
+          <h2 class="card__subtitle">
+            30-day, hassle-free money back guarantee
+          </h2>
 
-  &dollar;29 per month
+          <p class="card__text">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
 
-  Full access for less than &dollar;1 a day
+        <div class="card__grid-container">
+          <div class="card__grid__item">
+            <h3 class="card__grid__item__title">Monthly Subscription</h3>
+            <p class="card__grid__item__price">
+              <span class="gard__grid__item__price-dollar">$29 </span> per month
+            </p>
+            <p class="card__grid__item__text">
+              Full access for less than $1 a day
+            </p>
 
-  Sign Up
+            <button class="card__grid__item__button">Sign Up</button>
+          </div>
 
-  Why Us
+          <div class="card__grid__item">
+            <h3 class="card__grid__item__title">Why Us</h3>
+            <ul class="card__grid__item__list">
+              <li>Tutorials by industry experts</li>
+              <li>Peer & expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHub repos</li>
+              <li>Community forum</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
+          </div>
+        </div>
+      </main>
 
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/klepzs" target="_blank">klepzs</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
