@@ -153,3 +153,35 @@ body {
 .card__grid__item__list li:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+/* Media queries */
+@media screen and (max-width: 48.75em) {
+  .container {
+    width: 34rem;
+
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+    margin: 4.6rem auto;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 0.6rem;
+  }
+
+  .card__header,
+  .card__grid__item {
+    padding: 3.2rem;
+  }
+
+  .card__grid__item__button {
+    padding: 1.4rem 0;
+  }
+
+  .card__grid-container {
+    grid-template-columns: 1fr;
+  }
+}
