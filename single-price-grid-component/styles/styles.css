@@ -1,0 +1,155 @@
+/* Variables */
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-light-cyan: hsl(179, 47%, 52%);
+  --color-bright-yellow: hsl(71, 73%, 54%);
+  --color-light-gray: hsl(204, 43%, 93%);
+  --color-grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+
+  margin-top: 4.2rem;
+}
+
+/* Styles */
+body {
+  background-color: var(--color-light-gray);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 76rem;
+
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__header {
+  background-color: #fff;
+  padding: 4.2rem 9.6rem 4.2rem 4.2rem;
+}
+
+.card__title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+
+  margin-bottom: 2.4rem;
+}
+
+.card__subtitle {
+  font-size: 2.2rem;
+  color: var(--color-bright-yellow);
+
+  margin-bottom: 1.2rem;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  color: var(--color-grayish-blue);
+  line-height: 1.6;
+}
+
+.card__grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__grid__item {
+  padding: 4.2rem;
+}
+
+.card__grid__item:first-of-type {
+  background-color: var(--color-cyan);
+}
+
+.card__grid__item:last-of-type {
+  background-color: var(--color-light-cyan);
+}
+
+.card__grid__item__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+
+  margin-bottom: 2.4rem;
+}
+
+.card__grid__item__price {
+  margin-bottom: 1.2rem;
+}
+
+.card__grid__item__price--dollar {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card__grid__item__text {
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 1.6;
+
+  margin-bottom: 3.4rem;
+}
+
+.card__grid__item__button {
+  width: 100%;
+  color: #fff;
+  background-color: var(--color-bright-yellow);
+
+  font-size: 2rem;
+
+  padding: 2rem 0;
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.card__grid__item__button:hover {
+  cursor: pointer;
+}
+
+.card__grid__item__price,
+.card__grid__item__list li {
+  color: var(--color-light-gray);
+}
+
+.card__grid__item__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card__grid__item__list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
