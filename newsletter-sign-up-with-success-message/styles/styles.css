@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  margin-top: 4.2rem;
+}
+.attribution a {
+  color: hsl(4, 100%, 67%);
+}
+
+body {
+  color: hsl(234, 29%, 20%);
+  background-color: hsl(235, 18%, 26%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup {
+  width: 96rem;
+  display: flex;
+  padding: 2.4rem 0;
+  border-radius: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  display: none;
+}
+.signup.active {
+  display: flex;
+}
+.signup__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5.2rem;
+}
+.signup__right {
+  padding: 0 2.4rem 0 0;
+}
+.signup__title {
+  font-size: 5.4rem;
+  margin-bottom: 2.6rem;
+}
+.signup__description {
+  line-height: 1.5;
+  margin-bottom: 2.6rem;
+}
+.signup__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  list-style: none;
+  margin-bottom: 3.6rem;
+}
+.signup__features__feature {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.signup__form {
+  width: 100%;
+}
+.signup__form__group div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.signup__form__label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.signup__form__error {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(4, 100%, 67%);
+  display: none;
+}
+.signup__form__error.invalid {
+  display: block;
+}
+.signup__form__email-input {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 2.4rem;
+}
+.signup__form__email-input::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+.signup__form__email-input:focus {
+  outline: none;
+  border-color: hsl(234, 29%, 20%);
+}
+.signup__form__email-input.invalid {
+  background-color: hsla(4, 100%, 67%, 0.1);
+  border-color: hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+.signup__form__email-input.invalid::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+.signup__form__submit-btn {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  background-color: hsl(235, 18%, 26%);
+}
+.signup__form__submit-btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+}
+.signup__illustration-mobile {
+  display: none;
+}
+.signup__illustration-desktop {
+  width: 100%;
+}
+
+.success {
+  width: 46rem;
+  padding: 4.6rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  display: none;
+}
+.success.active {
+  display: block;
+}
+.success__icon {
+  margin-bottom: 2.4rem;
+}
+.success__title {
+  font-size: 4.6rem;
+  margin-bottom: 2.4rem;
+}
+.success__description {
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+.success__btn {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: hsl(235, 18%, 26%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.success__btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=styles.css.map */

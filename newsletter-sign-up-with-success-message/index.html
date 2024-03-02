@@ -22,7 +22,7 @@
     />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <!-- Script -->
     <script src="./js/script.js" defer></script>
@@ -32,24 +32,46 @@
 
   <body>
     <div class="container">
-      <div class="signup">
-        <div class="left__side">
-          <h1 class="title">Stay updated!</h1>
-          <p class="description">
+      <div id="signup-container" class="signup active">
+        <div class="signup__left">
+          <h1 class="signup__title">Stay updated!</h1>
+          <p class="signup__description">
             Join 60,000+ product managers receiving monthly updates on:
           </p>
 
-          <ul class="feature">
-            <li class="feature">Product discovery and building what matters</li>
-            <li class="feature">Measuring to ensure updates are a success</li>
-            <li class="feature">And much more!</li>
+          <ul class="signup__features">
+            <li class="signup__features__feature">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="signup__features__feature__icon"
+              />
+              Product discovery and building what matters
+            </li>
+            <li class="signup__features__feature">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="signup__features__feature__icon"
+              />
+              Measuring to ensure updates are a success
+            </li>
+            <li class="signup__features__feature">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="signup__features__feature__icon"
+              />
+              And much more!
+            </li>
           </ul>
 
-          <form class="form">
-            <div class="form__group">
+          <form id="signup__form" class="signup__form" autocomplete="off">
+            <div class="signup__form__group">
               <div>
-                <label for="email" class="label">Email address</label>
-                <span class="error">Valid email required</span>
+                <label for="email" class="signup__form__label"
+                  >Email address</label
+                >
+                <span id="signup__form__error" class="signup__form__error"
+                  >Valid email required</span
+                >
               </div>
 
               <input
@@ -57,44 +79,50 @@
                 id="email"
                 name="email"
                 placeholder="Email address"
-                class="email-input"
+                class="signup__form__email-input"
               />
             </div>
 
-            <button class="signup-btn">Subscribe to monthly newsletter</button>
+            <button
+              id="signup__form__submit-btn"
+              class="signup__form__submit-btn"
+            >
+              Subscribe to monthly newsletter
+            </button>
           </form>
         </div>
 
-        <div class="right__side">
+        <div class="signup__right">
           <img
             src="./assets/images/illustration-sign-up-desktop.svg"
             alt="Illustration sign up"
-            class="illustration-desktop"
+            class="signup__illustration-desktop"
           />
 
           <img
             src="./assets/images/illustration-sign-up-mobile.svg"
             alt="Illustration sign up"
-            class="illustration-mobile"
+            class="signup__illustration-mobile"
           />
         </div>
       </div>
 
-      <div class="success">
+      <div id="success-container" class="success">
         <img
           src="./assets/images/icon-success.svg"
           alt="Success icon"
-          class="success-icon"
+          class="success__icon"
         />
 
         <h1 class="success__title">Thanks for subscribing!</h1>
-        <p class="success_description">
+        <p class="success__description">
           A confirmation email has been sent to
-          <strong class="email-output">ash@loremcompany.com</strong>. Please
-          open it and click the button inside to confirm your subscription
+          <strong class="sucess__email-output">ash@loremcompany.com</strong>.
+          Please open it and click the button inside to confirm your
+          subscription
         </p>
 
-        <button class="success-btn">Dismiss message</button>
+        <button class="success__btn">Dismiss message</button>
       </div>
 
       <div class="attribution">
