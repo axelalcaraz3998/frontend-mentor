@@ -38,6 +38,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 60em) {
+  .container {
+    position: static;
+    transform: none;
+    margin: 3.2rem 0;
+  }
+}
 
 .signup {
   width: 96rem;
@@ -45,7 +52,16 @@ body {
   padding: 2.4rem 0;
   border-radius: 2rem;
   background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
   display: none;
+}
+@media (max-width: 60em) {
+  .signup {
+    width: 42rem;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 .signup.active {
   display: flex;
@@ -57,12 +73,27 @@ body {
   align-items: flex-start;
   padding: 0 5.2rem;
 }
+@media (max-width: 60em) {
+  .signup__left {
+    padding: 2.4rem 4.5rem;
+  }
+}
 .signup__right {
   padding: 0 2.4rem 0 0;
+}
+@media (max-width: 60em) {
+  .signup__right {
+    padding: 0;
+  }
 }
 .signup__title {
   font-size: 5.4rem;
   margin-bottom: 2.6rem;
+}
+@media (max-width: 60em) {
+  .signup__title {
+    font-size: 4.2rem;
+  }
 }
 .signup__description {
   line-height: 1.5;
@@ -79,6 +110,14 @@ body {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+}
+.signup__features__feature__icon {
+  align-self: flex-start;
+}
+@media (max-width: 60em) {
+  .signup__features__feature {
+    line-height: 1.3;
+  }
 }
 .signup__form {
   width: 100%;
@@ -143,8 +182,19 @@ body {
 .signup__illustration-mobile {
   display: none;
 }
+@media (max-width: 60em) {
+  .signup__illustration-mobile {
+    display: block;
+    width: 100%;
+  }
+}
 .signup__illustration-desktop {
   width: 100%;
+}
+@media (max-width: 60em) {
+  .signup__illustration-desktop {
+    display: none;
+  }
 }
 
 .success {
@@ -153,6 +203,16 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 2rem;
   display: none;
+}
+@media (max-width: 60em) {
+  .success {
+    width: 42rem;
+    padding: 2.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .success.active {
   display: block;
