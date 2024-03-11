@@ -34,56 +34,62 @@
     <div class="container">
       <div class="age-calculator">
         <form class="age-calculator__form">
-          <div class="age-calculator__form__input">
+          <div class="age-calculator__form__input__container">
             <label
-              class="age-calculator__form__input__day__label"
-              for="age-calculator__form__input__day"
+              class="age-calculator__form__input__container__label age-calculator__form__input__container__label--day"
+              for="age-calculator__form__input__container__input--day"
               >Day</label
             >
             <input
               type="number"
               placeholder="DD"
-              name="age-calculator__form__input__day"
-              id="age-calculator__form__input__day"
-              class="age-calculator__form__input__day"
+              name="age-calculator__form__input__container__input--day"
+              id="age-calculator__form__input__container__input--day"
+              class="age-calculator__form__input__container__input age-calculator__form__input__container__input--day"
             />
-            <p class="age-calculator__form__input__day__error-message">
+            <p
+              class="age-calculator__form__input__container__error-message age-calculator__form__input__container__error-message--day"
+            >
               This field is required
             </p>
           </div>
 
-          <div class="age-calculator__form__input">
+          <div class="age-calculator__form__input__container">
             <label
-              class="age-calculator__form__input__month__label"
-              for="age-calculator__form__input__month"
+              class="age-calculator__form__input__container__label age-calculator__form__input__container__label--month"
+              for="age-calculator__form__input__container__input--month"
               >Month</label
             >
             <input
               type="number"
               placeholder="MM"
-              name="age-calculator__form__input__month"
-              id="age-calculator__form__input__month"
-              class="age-calculator__form__input__month"
+              name="age-calculator__form__input__container__input--month"
+              id="age-calculator__form__input__container__input--month"
+              class="age-calculator__form__input__container__input age-calculator__form__input__container__input--month"
             />
-            <p class="age-calculator__form__input__month__error-message">
+            <p
+              class="age-calculator__form__input__container__error-message age-calculator__form__input__container__error-message--month"
+            >
               This field is required
             </p>
           </div>
 
-          <div class="age-calculator__form__input">
+          <div class="age-calculator__form__input__container">
             <label
-              class="age-calculator__form__input__year__label"
-              for="age-calculator__form__input__year"
+              class="age-calculator__form__input__container__label age-calculator__form__input__container__label--year"
+              for="age-calculator__form__input__container__input--year"
               >Year</label
             >
             <input
               type="number"
               placeholder="YYYY"
-              name="age-calculator__form__input__year"
-              id="age-calculator__form__input__year"
-              class="age-calculator__form__input__year"
+              name="age-calculator__form__input__container__input--year"
+              id="age-calculator__form__input__container__input--year"
+              class="age-calculator__form__input__container__input age-calculator__form__input__container__input--year"
             />
-            <p class="age-calculator__form__input__year__error-message">
+            <p
+              class="age-calculator__form__input__container__error-message age-calculator__form__input__container__error-message--year"
+            >
               This field is required
             </p>
           </div>
@@ -101,14 +107,27 @@
 
         <div class="age-calculator__results">
           <h2 class="age-calculator__results__result">
-            <span class="age-calculator__results__result--years">--</span> years
+            <span
+              class="age-calculator__results__result__output age-calculator__results__result__output--years"
+              >--</span
+            >
+            years
           </h2>
+
           <h2 class="age-calculator__results__result">
-            <span class="age-calculator__results__result--months">--</span>
+            <span
+              class="age-calculator__results__result__output age-calculator__results__result__output--months"
+              >--</span
+            >
             months
           </h2>
+
           <h2 class="age-calculator__results__result">
-            <span class="age-calculator__results__result--days">--</span> months
+            <span
+              class="age-calculator__results__result__output age-calculator__results__result__output--days"
+              >--</span
+            >
+            days
           </h2>
         </div>
       </div>
