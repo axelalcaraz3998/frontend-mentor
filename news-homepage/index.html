@@ -1,60 +1,275 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-  The Bright Future of Web 3.0?
+    <!-- Script -->
+    <script defer src="./js/script.js"></script>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <title>News homepage</title>
+  </head>
 
-  Read more
+  <body>
+    <div class="container">
+      <main class="homepage">
+        <header class="homepage__header">
+          <div class="homepage__header__logo-container">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Logo"
+              class="homepage__header__logo-container__logo"
+            />
+          </div>
 
-  New 
+          <nav class="homepage__header__navigation">
+            <ul class="homepage__header__navigation__navbar">
+              <li class="homepage__header__navigation__navbar__item">
+                <a
+                  href="#"
+                  class="homepage__header__navigation__navbar__item__link"
+                  >Home</a
+                >
+              </li>
+              <li class="homepage__header__navigation__navbar__item">
+                <a
+                  href="#"
+                  class="homepage__header__navigation__navbar__item__link"
+                  >News</a
+                >
+              </li>
+              <li class="homepage__header__navigation__navbar__item">
+                <a
+                  href="#"
+                  class="homepage__header__navigation__navbar__item__link"
+                  >Popular</a
+                >
+              </li>
+              <li class="homepage__header__navigation__navbar__item">
+                <a
+                  href="#"
+                  class="homepage__header__navigation__navbar__item__link"
+                  >Trending</a
+                >
+              </li>
+              <li class="homepage__header__navigation__navbar__item">
+                <a
+                  href="#"
+                  class="homepage__header__navigation__navbar__item__link"
+                  >Categories</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+        <section class="homepage__main-section">
+          <article class="homepage__main-section__main-article">
+            <div class="homepage__main-section__main-article__image-container">
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="Web 3.0 image desktop"
+                class="homepage__main-section__main-article__image-container__image homepage__main-section__main-article__image-container__image--desktop"
+              />
+              <img
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="Web 3.0 image mobile"
+                class="homepage__main-section__main-article__image-container__image homepage__main-section__main-article__image-container__image--mobile"
+              />
+            </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+            <div class="homepage__main-section__main-article__content">
+              <h1 class="homepage__main-section__main-article__content__title">
+                The Bright Future of Web 3.0?
+              </h1>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              <div
+                class="homepage__main-section__main-article__content__description-container"
+              >
+                <p
+                  class="homepage__main-section__main-article__content__description-container__description"
+                >
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button
+                  class="homepage__main-section__main-article__content__description-container__read-more-btn"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </article>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+          <aside class="homepage__main-section__sidebar">
+            <h2 class="homepage__main-section__sidebar__title">New</h2>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+            <article class="homepage__main-section__sidebar__article">
+              <a
+                href="#"
+                class="homepage__main-section__sidebar__article__article-title"
+              >
+                New Hydrogen VS Electric Cars
+              </a>
+              <p
+                class="homepage__main-section__sidebar__article__article-description"
+              >
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <article class="homepage__main-section__sidebar__article">
+              <a
+                href="#"
+                class="homepage__main-section__sidebar__article__article-title"
+              >
+                The Downsides of AI Artistry
+              </a>
+              <p
+                class="homepage__main-section__sidebar__article__article-description"
+              >
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+
+            <article class="homepage__main-section__sidebar__article">
+              <a
+                href="#"
+                class="homepage__main-section__sidebar__article__article-title"
+              >
+                Is VC Funding Drying Up?
+              </a>
+              <p
+                class="homepage__main-section__sidebar__article__article-description"
+              >
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </aside>
+        </section>
+
+        <section class="homepage__related-articles">
+          <article class="homepage__related-articles__article">
+            <div class="homepage__related-articles__article__image-container">
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="Reviving Retro PCs"
+                class="homepage__related-articles__article__image-container__image"
+              />
+            </div>
+
+            <div class="homepage__related-articles__article__article-content">
+              <p
+                class="homepage__related-articles__article__article-content__index"
+              >
+                01
+              </p>
+              <a
+                href="#"
+                class="homepage__related-articles__article__article-content__article-title"
+              >
+                Reviving Retro PCs
+              </a>
+              <p
+                class="homepage__related-articles__article__article-content__article-description"
+              >
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
+
+          <article class="homepage__related-articles__article">
+            <div class="homepage__related-articles__article__image-container">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="Top 10 Laptops of 2022"
+                class="homepage__related-articles__article__image-container__image"
+              />
+            </div>
+
+            <div class="homepage__related-articles__article__article-content">
+              <p
+                class="homepage__related-articles__article__article-content__index"
+              >
+                02
+              </p>
+              <a
+                href="#"
+                class="homepage__related-articles__article__article-content__article-title"
+              >
+                Top 10 Laptops of 2022
+              </a>
+              <p
+                class="homepage__related-articles__article__article-content__article-description"
+              >
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </article>
+
+          <article class="homepage__related-articles__article">
+            <div class="homepage__related-articles__article__image-container">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="The Growth of Gaming"
+                class="homepage__related-articles__article__image-container__image"
+              />
+            </div>
+
+            <div class="homepage__related-articles__article__article-content">
+              <p
+                class="homepage__related-articles__article__article-content__index"
+              >
+                03
+              </p>
+              <a
+                href="#"
+                class="homepage__related-articles__article__article-content__article-title"
+              >
+                The Growth of Gaming
+              </a>
+              <p
+                class="homepage__related-articles__article__article-content__article-description"
+              >
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/klepzs" target="_blank">klepzs</a>.
+      </div>
+    </div>
+  </body>
 </html>
