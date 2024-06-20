@@ -1,3 +1,10 @@
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish-blue: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
+
 *,
 *::before,
 *::after {
@@ -16,4 +23,211 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
+
+  background-color: $off-white;
+}
+
+.homepage {
+  width: 144rem;
+  margin: 4.6rem auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 3.6rem;
+
+    &__navigation {
+      &__navbar {
+        display: flex;
+        gap: 3.2rem;
+
+        list-style: none;
+
+        &__item {
+          &__link {
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: $grayish-blue;
+
+            transition: color 0.3s;
+
+            &:hover {
+              color: $soft-red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__main-section {
+    display: flex;
+    gap: 3.2rem;
+
+    &__main-article {
+      width: 100%;
+
+      &__image-container {
+        width: 100%;
+
+        &__image {
+          &--desktop {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          &--mobile {
+            display: none;
+          }
+        }
+      }
+
+      &__content {
+        width: 100%;
+
+        display: flex;
+        margin-top: 3.2rem;
+
+        &__title {
+          width: 100%;
+
+          padding-right: 26rem;
+
+          font-size: 5.6rem;
+          font-weight: 900;
+          color: $very-dark-blue;
+        }
+
+        &__description-container {
+          width: 100%;
+
+          &__description {
+            font-size: 1.6rem;
+            color: $dark-grayish-blue;
+            line-height: 1.5;
+
+            padding-right: 3.6rem;
+            margin-bottom: 2.6rem;
+          }
+
+          &__read-more-btn {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+            color: #fff;
+
+            padding: 1rem 2.4rem;
+
+            border: none;
+            background-color: $soft-red;
+
+            &:hover {
+              cursor: pointer;
+              background-color: $very-dark-blue;
+            }
+          }
+        }
+      }
+    }
+
+    &__sidebar {
+      width: 54rem;
+      height: 100%;
+
+      padding: 3.4em 2.4rem;
+
+      background-color: $very-dark-blue;
+
+      &__title {
+        font-size: 4.6rem;
+        color: $soft-orange;
+      }
+
+      &__article {
+        padding: 4.6rem 0;
+
+        border-bottom: 1px solid $grayish-blue;
+
+        &__article-title {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $off-white;
+          text-decoration: none;
+
+          &:hover {
+            color: $soft-orange;
+          }
+        }
+
+        &__article-description {
+          font-size: 1.6rem;
+          color: $grayish-blue;
+          line-height: 1.5;
+
+          margin-top: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &__related-articles {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 4.6rem;
+
+    &__article {
+      display: flex;
+      gap: 2.4rem;
+
+      &__image-container {
+        &__image {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      &__article-content {
+        width: 100%;
+        padding-right: 6.4rem;
+
+        &__index {
+          font-size: 4.2rem;
+          font-weight: 700;
+          color: $grayish-blue;
+
+          margin-bottom: 1.6rem;
+        }
+
+        &__article-title {
+          font-size: 2rem;
+          font-weight: 900;
+          color: $very-dark-blue;
+          text-decoration: none;
+
+          &:hover {
+            color: $soft-red;
+          }
+        }
+
+        &__article-description {
+          font-size: 1.6rem;
+          color: $dark-grayish-blue;
+          line-height: 1.5;
+
+          margin-top: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
 }
