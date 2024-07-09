@@ -33,17 +33,48 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 60em) {
+  .card {
+    width: 74rem;
+  }
+}
+@media screen and (max-width: 46.25em) {
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
 .card__left {
   padding: 6.4rem 3.2rem;
 }
 .card__left__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 3.2rem;
+}
+@media screen and (max-width: 21.25em) {
+  .card__left__top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 .card__left__top__title {
   font-size: 2.4rem;
   color: hsl(202, 55%, 16%);
+}
+@media screen and (max-width: 26.25em) {
+  .card__left__top__title {
+    font-size: 2rem;
+  }
 }
 .card__left__top__clear {
   font-size: 1.6rem;
@@ -55,6 +86,11 @@ body {
 .card__left__top__clear:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 26.25em) {
+  .card__left__top__clear {
+    font-size: 1.4rem;
+  }
+}
 .card__left__form {
   display: flex;
   flex-direction: column;
@@ -63,6 +99,12 @@ body {
 .card__left__form__row {
   display: flex;
   gap: 1.2rem;
+}
+@media screen and (max-width: 60em) {
+  .card__left__form__row {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 }
 .card__left__form__group {
   display: flex;
@@ -73,6 +115,11 @@ body {
 .card__left__form__group label {
   font-size: 1.6rem;
   color: hsl(200, 24%, 40%);
+}
+@media screen and (max-width: 26.25em) {
+  .card__left__form__group label {
+    font-size: 1.4rem;
+  }
 }
 .card__left__form__group input {
   width: 100%;
@@ -98,6 +145,11 @@ body {
 .card__left__form__group--large input {
   padding: 0 1.6rem 0 5.2rem;
 }
+@media screen and (max-width: 26.25em) {
+  .card__left__form__group--large input {
+    padding: 0 1.6rem 0 4.2rem;
+  }
+}
 .card__left__form__group--large__icon {
   height: calc(4.2rem - 3px);
   padding: 0 1.6rem;
@@ -112,8 +164,19 @@ body {
   left: 2px;
   bottom: 2px;
 }
+@media screen and (max-width: 26.25em) {
+  .card__left__form__group--large__icon {
+    font-size: 1.4rem;
+    padding: 0 1.2rem;
+  }
+}
 .card__left__form__group--small input {
   padding: 0 8.4rem 0 1.6rem;
+}
+@media screen and (max-width: 26.25em) {
+  .card__left__form__group--small input {
+    padding: 0 7.6rem 0 1.6rem;
+  }
 }
 .card__left__form__group--small__icon {
   height: calc(4.2rem - 4px);
@@ -128,6 +191,12 @@ body {
   position: absolute;
   right: 2px;
   bottom: 2px;
+}
+@media screen and (max-width: 26.25em) {
+  .card__left__form__group--small__icon {
+    font-size: 1.4rem;
+    padding: 0 1.2rem;
+  }
 }
 .card__left__form__group--radio {
   flex-direction: row;
@@ -158,10 +227,20 @@ body {
   cursor: pointer;
   background-color: #c9cc24;
 }
+@media screen and (max-width: 26.25em) {
+  .card__left__form__button {
+    width: 100%;
+  }
+}
 .card__right {
   padding: 6.4rem 3.2rem;
   background-color: hsl(202, 55%, 16%);
   border-radius: 0 0 0 8rem;
+}
+@media screen and (max-width: 60em) {
+  .card__right {
+    border-radius: 0;
+  }
 }
 .card__right__result {
   display: none;
@@ -224,6 +303,11 @@ body {
   font-weight: 700;
   color: hsl(61, 70%, 52%);
 }
+@media screen and (max-width: 60em) {
+  .card__right__result--repayment__result__group__value-monthly {
+    font-size: 3.6rem;
+  }
+}
 .card__right__result--repayment__result__group__value-total {
   font-size: 2.4rem;
   color: hsl(0, 0%, 100%);
@@ -260,6 +344,11 @@ body {
   font-size: 4.6rem;
   font-weight: 700;
   color: hsl(61, 70%, 52%);
+}
+@media screen and (max-width: 60em) {
+  .card__right__result--interest-only__result__group__value-interest {
+    font-size: 3.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
