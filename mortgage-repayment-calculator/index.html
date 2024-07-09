@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+
+    <title>Mortgage repayment calculator</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card__left">
+        <div class="card__left__top">
+          <h2 class="card__left__top__title">Mortgage Calculator</h2>
+          <button class="card__left__top__clear">Clear All</button>
+        </div>
+
+        <div class="card__left__form">
+          <div class="card__left__form__group card__left__form__group--large">
+            <label for="mortgage-amount">Mortgage Amount</label>
+            <div class="card__left__form__group--large__icon">$</div>
+            <input type="number" name="mortgage-amount" id="mortgage-amount" />
+          </div>
+
+          <div class="card__left__form__row">
+            <div class="card__left__form__group card__left__form__group--small">
+              <label for="mortgage-term">Mortgage Term</label>
+              <input type="number" name="mortgage-term" id="mortgage-term" />
+              <div class="card__left__form__group--small__icon">years</div>
+            </div>
+
+            <div class="card__left__form__group card__left__form__group--small">
+              <label for="interest-rate">Interest Rate</label>
+              <input type="number" name="interest-rate" id="interest-rate" />
+              <div class="card__left__form__group--small__icon">%</div>
+            </div>
+          </div>
+
+          <div class="card__left__form__group card__left__form__group--radio">
+            <input
+              type="radio"
+              value="repayment"
+              name="form-group-radio"
+              id="repayment"
+            />
+            <label for="repayment">Repayment</label>
+          </div>
+
+          <div class="card__left__form__group card__left__form__group--radio">
+            <input
+              type="radio"
+              value="interest-only"
+              name="form-group-radio"
+              id="interest-only"
+            />
+            <label for="interest-only">Interest Only</label>
+          </div>
+
+          <button class="card__left__form__button">
+            <img
+              src="./assets/images/icon-calculator.svg"
+              alt="Icon calculator"
+            />
+            Calculate Repayments
+          </button>
+        </div>
+      </div>
+
+      <div class="card__right">
+        <div
+          class="card__right__result card__right__result--empty card__right__result--active"
+        >
+          <img
+            src="./assets/images/illustration-empty.svg"
+            alt="Illustration of a calculator"
+          />
+
+          <h2 class="card__right__result--empty__title">Results shown here</h2>
+          <p class="card__right__result--empty__description">
+            Complete the form and click "calculate repayments" to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+
+        <div class="card__right__result card__right__result--repayment">
+          <h2 class="card__right__result--repayment__title">Your results</h2>
+          <p class="card__right__result--repayment__description">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click "calculate
+            repayments" again.
+          </p>
+
+          <div class="card__right__result--repayment__result">
+            <div class="card__right__result--repayment__result__group">
+              <div class="card__right__result--repayment__result__group__title">
+                Your monthly repayments
+              </div>
+              <div
+                class="card__right__result--repayment__result__group__value-monthly"
+              >
+                <span
+                  class="card__right__result--repayment__result__group__value-monthly--span"
+                  >1797.74</span
+                >
+              </div>
+            </div>
+
+            <div class="card__right__result--repayment__result__group">
+              <div class="card__right__result--repayment__result__group__title">
+                Total you'll repay over the term
+              </div>
+              <div
+                class="card__right__result--repayment__result__group__value-total"
+              >
+                <span
+                  class="card__right__result--repayment__result__group__value-total--span"
+                  >539322.94</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__right__result card__right__result--interest-only">
+          <h2 class="card__right__result--interest-only__title">
+            Your results
+          </h2>
+          <p class="card__right__result--interest-only__description">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click "calculate
+            repayments" again.
+          </p>
+
+          <div class="card__right__result--interest-only__result">
+            <div class="card__right__result--interest-only__result__group">
+              <div
+                class="card__right__result--interest-only__result__group__title"
+              >
+                Total interests paid over the term
+              </div>
+              <div
+                class="card__right__result--interest-only__result__group__value-interest"
+              >
+                <span
+                  class="card__right__result--interest-only__result__group__value-interest--span"
+                  >1797.74</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

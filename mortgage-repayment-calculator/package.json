@@ -1,0 +1,16 @@
+{
+  "name": "mortgage-repayment-calculator",
+  "version": "1.0.0",
+  "description": "![Design preview for the Mortgage repayment calculator coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass css/styles.scss css/styles.css",
+    "sass:watch": "sass --watch css/styles.scss css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
