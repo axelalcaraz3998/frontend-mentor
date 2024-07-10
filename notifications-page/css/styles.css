@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 46.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -26,6 +31,13 @@ body {
   padding: 3.2rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.2rem;
+}
+@media screen and (max-width: 46.25em) {
+  .notifications {
+    width: 100%;
+    padding: 2.4rem;
+    margin: 0;
+  }
 }
 .notifications__header {
   display: flex;
