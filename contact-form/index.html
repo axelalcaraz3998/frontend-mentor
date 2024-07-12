@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Script -->
+    <script src="./js/script.js" defer></script>
+
+    <title>Contact form</title>
+  </head>
+
+  <body>
+    <div class="form">
+      <h1 class="form__title">Contact Us</h1>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="first-name">Fisrt Name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            autocomplete="off"
+          />
+          <p class="form__group__error form__group__error--first-name">
+            This field is required
+          </p>
+        </div>
+
+        <div class="form__group">
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            autocomplete="off"
+          />
+          <p class="form__group__error form__group__error--last-name">
+            This field is required
+          </p>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" autocomplete="off" />
+        <p class="form__group__error form__group__error--email">
+          Please enter a valid email address
+        </p>
+      </div>
+
+      <label class="form__label">Query Type</label>
+      <div class="form__row">
+        <div
+          id="form__group--radio--general-enquiry"
+          class="form__group form__group--radio"
+        >
+          <input
+            type="radio"
+            id="general-enquiry"
+            name="query-type"
+            value="general-enquiry"
+          />
+          <label for="general-enquiry">General Enquiry</label>
+        </div>
+
+        <div
+          id="form__group--radio--support-request"
+          class="form__group form__group--radio"
+        >
+          <input
+            type="radio"
+            id="support-request"
+            name="query-type"
+            value="support-request"
+          />
+          <label for="support-request">Support Request</label>
+        </div>
+      </div>
+      <p class="form__group__error form__group__error--query-type">
+        Please select a query type
+      </p>
+
+      <div class="form__group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" autocomplete="off"></textarea>
+        <p class="form__group__error form__group__error--message">
+          This field is required
+        </p>
+      </div>
+
+      <div class="form__group form__group--checkbox">
+        <input type="checkbox" id="consent" name="consent" />
+        <label for="consent"> I consent to being contacted by the team</label>
+      </div>
+      <p class="form__group__error form__group__error--checkbox">
+        To submit this form, please consent to being contacted
+      </p>
+
+      <button class="form__submit">Submit</button>
+    </div>
+
+    <div class="success">
+      <div class="success__top">
+        <img
+          src="./assets/images/icon-success-check.svg"
+          alt="Icon success check"
+        />
+        <h2 class="success__title">Message sent!</h2>
+      </div>
+
+      <p class="success_message">
+        Thanks for completing the form. We'll be in touch soon
+      </p>
+    </div>
+  </body>
+</html>
