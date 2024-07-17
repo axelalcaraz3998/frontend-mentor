@@ -13,6 +13,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -25,43 +33,70 @@
   <body>
     <div class="container">
       <div class="container__left">
-        <!-- 448px x 246px -->
-        <div class="container__left__card left__card--front">
-          <p class="left__card--front__card-number">0000 0000 0000 0000</p>
-          <div class="left__card--front__card-number__group">
-            <p class="left__card--front__card-number__group__cardholder-name">
-              Jane Appleseed /p>
+        <div class="container__left__card container__left__card--front">
+          <div>
+            <img
+              src="./images/card-logo.svg"
+              alt="Card logo"
+              class="container__left__card--front__card-logo"
+            />
+          </div>
+
+          <div>
+            <p class="container__left__card--front__card-number">
+              0000 0000 0000 0000
             </p>
-            <p class="left__card--front__card-number__group__exp-date">00/00</p>
+            <div class="container__left__card--front__card-number__group">
+              <p
+                class="container__left__card--front__card-number__group__cardholder-name"
+              >
+                Jane Appleseed
+              </p>
+              <p
+                class="container__left__card--front__card-number__group__exp-date"
+              >
+                00/00
+              </p>
+            </div>
           </div>
         </div>
-        <div class="container__left__card left__card--back">
-          <p class="left__card--back__cvc">000</p>
+        <div class="container__left__card container__left__card--back">
+          <p class="container__left__card--back__cvc">000</p>
         </div>
       </div>
 
       <div class="container__right">
         <form class="container__right__form">
           <div class="container__right__form__group">
-            <label for="cardholder-name"></label>
+            <label for="cardholder-name">Cardholder Name</label>
             <input
               type="text"
               id="cardholder-name"
               name="cardholder-name"
               placeholder="e.g. Jane Appleseed"
             />
-            <p id="cardholder-name-error">Can't be blank</p>
+            <p
+              id="cardholder-name-error"
+              class="container__right__form__group__error"
+            >
+              Can't be blank
+            </p>
           </div>
 
           <div class="container__right__form__group">
-            <label for="card-number"></label>
+            <label for="card-number">Card Number</label>
             <input
               type="text"
               id="card-number"
               name="card-number"
               placeholder="e.g. 1234 5678 9123 0000"
             />
-            <p id="card-number-error">Can't be blank</p>
+            <p
+              id="card-number-error"
+              class="container__right__form__group__error"
+            >
+              Can't be blank
+            </p>
           </div>
 
           <div class="container__right__form__group--flex">
@@ -81,13 +116,20 @@
                   placeholder="YY"
                 />
               </div>
-              <p id="exp-date-error">Can't be blank</p>
+              <p
+                id="exp-date-error"
+                class="container__right__form__group__error"
+              >
+                Can't be blank
+              </p>
             </div>
 
             <div class="container__right__form__group--flex__right">
               <label for="cvc">CVC</label>
               <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" />
-              <p id="cvc-error">Can't be blank</p>
+              <p id="cvc-error" class="container__right__form__group__error">
+                Can't be blank
+              </p>
             </div>
           </div>
 

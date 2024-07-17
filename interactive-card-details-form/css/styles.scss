@@ -5,4 +5,260 @@ $light-grayish-violet: hsl(270, 3%, 87%);
 $dark-grayish-violet: hsl(279, 6%, 55%);
 $very-dark-violet: hsl(278, 68%, 11%);
 
-$liner-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+$liner-gradient: hsl(249, 99%, 64%), hsl(278, 94%, 30%);
+
+// CSS Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: $very-dark-violet;
+}
+
+// Mixins
+@mixin Input {
+  width: 100%;
+  height: 4.2rem;
+
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  padding: 0 1.2rem;
+
+  border: 1px solid $light-grayish-violet;
+  border-radius: 0.8rem;
+
+  &:placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    color: $dark-grayish-violet;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: hsl(278, 94%, 30%);
+  }
+}
+
+@mixin Label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.2rem;
+
+    background-image: url("../images/bg-main-desktop.png");
+    background-position: center;
+    background-size: cover;
+
+    &__card {
+      width: 44.8rem;
+      height: 24.6rem;
+
+      position: relative;
+
+      &--front {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 2.4rem;
+        left: 25%;
+
+        background-image: url("../images/bg-card-front.png");
+        background-position: center;
+        background-size: cover;
+
+        &__card-number {
+          font-size: 2.6rem;
+          letter-spacing: 0.5rem;
+          color: $white;
+
+          margin-bottom: 1.6rem;
+
+          &__group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.125rem;
+            color: $light-grayish-violet;
+          }
+        }
+      }
+
+      &--back {
+        left: 50%;
+
+        background-image: url("../images/bg-card-back.png");
+        background-position: center;
+        background-size: cover;
+
+        &__cvc {
+          font-size: 1.4rem;
+          letter-spacing: 0.25rem;
+          color: $white;
+
+          position: absolute;
+          top: 50%;
+          left: 80%;
+          transform: translate(0, -75%);
+        }
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    &__form {
+      width: 40rem;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        margin-bottom: 1.2rem;
+
+        &--flex {
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          gap: 2.4rem;
+
+          &__left {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            label {
+              @include Label;
+            }
+
+            &__group {
+              width: 100%;
+
+              display: flex;
+              align-items: center;
+              gap: 0.8rem;
+
+              input {
+                @include Input;
+
+                &.error {
+                  border-color: $red;
+                }
+              }
+            }
+          }
+
+          &__right {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            label {
+              @include Label;
+            }
+
+            input {
+              @include Input;
+
+              &.error {
+                border-color: $red;
+              }
+            }
+          }
+        }
+
+        &__error {
+          font-size: 1.2rem;
+          color: $red;
+
+          visibility: hidden;
+          opacity: 0;
+
+          &.error {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        label {
+          @include Label;
+        }
+
+        input {
+          @include Input;
+
+          &.error {
+            border-color: $red;
+          }
+        }
+      }
+
+      &__submit-btn {
+        width: 100%;
+        height: 5.2rem;
+
+        margin-top: 1.2rem;
+
+        background-color: $very-dark-violet;
+        border: none;
+        border-radius: 0.8rem;
+
+        font-size: inherit;
+        letter-spacing: 0.125rem;
+        color: $white;
+
+        cursor: pointer;
+
+        &:hover {
+          background-image: linear-gradient(to right, $liner-gradient);
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,230 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: hsl(278, 68%, 11%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.container__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.2rem;
+  background-image: url("../images/bg-main-desktop.png");
+  background-position: center;
+  background-size: cover;
+}
+.container__left__card {
+  width: 44.8rem;
+  height: 24.6rem;
+  position: relative;
+}
+.container__left__card--front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.4rem;
+  left: 25%;
+  background-image: url("../images/bg-card-front.png");
+  background-position: center;
+  background-size: cover;
+}
+.container__left__card--front__card-number {
+  font-size: 2.6rem;
+  letter-spacing: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.6rem;
+}
+.container__left__card--front__card-number__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  color: hsl(270, 3%, 87%);
+}
+.container__left__card--back {
+  left: 50%;
+  background-image: url("../images/bg-card-back.png");
+  background-position: center;
+  background-size: cover;
+}
+.container__left__card--back__cvc {
+  font-size: 1.4rem;
+  letter-spacing: 0.25rem;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(0, -75%);
+}
+.container__right {
+  position: relative;
+}
+.container__right__form {
+  width: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container__right__form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.container__right__form__group--flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.container__right__form__group--flex__left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.container__right__form__group--flex__left label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+.container__right__form__group--flex__left__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container__right__form__group--flex__left__group input {
+  width: 100%;
+  height: 4.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0 1.2rem;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 0.8rem;
+}
+.container__right__form__group--flex__left__group input:placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  color: hsl(279, 6%, 55%);
+}
+.container__right__form__group--flex__left__group input:focus, .container__right__form__group--flex__left__group input:hover {
+  outline: none;
+  border-color: hsl(278, 94%, 30%);
+}
+.container__right__form__group--flex__left__group input.error {
+  border-color: hsl(0, 100%, 66%);
+}
+.container__right__form__group--flex__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.container__right__form__group--flex__right label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+.container__right__form__group--flex__right input {
+  width: 100%;
+  height: 4.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0 1.2rem;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 0.8rem;
+}
+.container__right__form__group--flex__right input:placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  color: hsl(279, 6%, 55%);
+}
+.container__right__form__group--flex__right input:focus, .container__right__form__group--flex__right input:hover {
+  outline: none;
+  border-color: hsl(278, 94%, 30%);
+}
+.container__right__form__group--flex__right input.error {
+  border-color: hsl(0, 100%, 66%);
+}
+.container__right__form__group__error {
+  font-size: 1.2rem;
+  color: hsl(0, 100%, 66%);
+  visibility: hidden;
+  opacity: 0;
+}
+.container__right__form__group__error.error {
+  visibility: visible;
+  opacity: 1;
+}
+.container__right__form__group label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+.container__right__form__group input {
+  width: 100%;
+  height: 4.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0 1.2rem;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 0.8rem;
+}
+.container__right__form__group input:placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  color: hsl(279, 6%, 55%);
+}
+.container__right__form__group input:focus, .container__right__form__group input:hover {
+  outline: none;
+  border-color: hsl(278, 94%, 30%);
+}
+.container__right__form__group input.error {
+  border-color: hsl(0, 100%, 66%);
+}
+.container__right__form__submit-btn {
+  width: 100%;
+  height: 5.2rem;
+  margin-top: 1.2rem;
+  background-color: hsl(278, 68%, 11%);
+  border: none;
+  border-radius: 0.8rem;
+  font-size: inherit;
+  letter-spacing: 0.125rem;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.container__right__form__submit-btn:hover {
+  background-image: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
 
 /*# sourceMappingURL=styles.css.map */
