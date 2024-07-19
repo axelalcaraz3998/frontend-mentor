@@ -55,7 +55,13 @@
               <p
                 class="container__left__card--front__card-number__group__exp-date"
               >
-                00/00
+                <span
+                  class="container__left__card--front__card-number__group__exp-date__month"
+                  >00</span
+                >/<span
+                  class="container__left__card--front__card-number__group__exp-date__year"
+                  >00</span
+                >
               </p>
             </div>
           </div>
@@ -90,6 +96,7 @@
               id="card-number"
               name="card-number"
               placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="16"
             />
             <p
               id="card-number-error"
@@ -108,12 +115,14 @@
                   id="exp-date-month"
                   name="exp-date-month"
                   placeholder="MM"
+                  maxlength="2"
                 />
                 <input
                   type="text"
                   id="exp-date-year"
                   name="exp-date-year"
                   placeholder="YY"
+                  maxlength="2"
                 />
               </div>
               <p
@@ -126,7 +135,13 @@
 
             <div class="container__right__form__group--flex__right">
               <label for="cvc">CVC</label>
-              <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" />
+              <input
+                type="text"
+                id="cvc"
+                name="cvc"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
               <p id="cvc-error" class="container__right__form__group__error">
                 Can't be blank
               </p>
