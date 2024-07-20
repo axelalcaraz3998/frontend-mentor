@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+
+    <title>Expenses chart component</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card__top">
+        <div class="card__top__left">
+          <p class="card__top__left__label">My balance</p>
+          <p class="card__top__left__value">$921.48</p>
+        </div>
+
+        <div class="card__top__right">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
+      </div>
+
+      <div class="card__bottom">
+        <p class="card__bottom__title">Spending - Last 7 days</p>
+
+        <div class="card__bottom__chart"></div>
+
+        <div class="card__bottom__summary">
+          <div class="card__bottom__summary__left">
+            <p class="card__bottom__summary__left__label">Total this month</p>
+            <p class="card__bottom__summary__left__value">$478.33</p>
+          </div>
+
+          <div class="card__bottom__summary__right">
+            <p class="card__bottom__summary__right__value">+2.4%</p>
+            <p class="card__bottom__summary__right__label">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

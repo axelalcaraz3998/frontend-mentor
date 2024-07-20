@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  color: hsl(25, 47%, 15%);
+}
+
+/*# sourceMappingURL=styles.css.map */
