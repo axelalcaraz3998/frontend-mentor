@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 26.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "DM Sans", sans-serif;
@@ -17,6 +22,88 @@ body {
   font-weight: 400;
   line-height: 1;
   color: hsl(25, 47%, 15%);
+  background-color: hsl(27, 66%, 92%);
+}
+
+.card {
+  width: 42rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__top {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 1.6rem;
+  padding: 2.4rem 3.2rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__top__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: hsl(33, 100%, 98%);
+}
+.card__top__left__label {
+  font-size: 1.4rem;
+}
+.card__top__left__value {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.card__top__right img {
+  width: 100%;
+  height: auto;
+}
+.card__bottom {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 1.6rem;
+  padding: 2.4rem 3.2rem;
+}
+.card__bottom__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+}
+.card__bottom__chart {
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid hsl(27, 66%, 92%);
+  margin-bottom: 2.4rem;
+}
+.card__bottom__chart img {
+  width: 100%;
+  height: auto;
+}
+.card__bottom__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card__bottom__summary__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card__bottom__summary__left__label {
+  font-size: 1.6rem;
+  color: hsl(28, 10%, 53%);
+}
+.card__bottom__summary__left__value {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.card__bottom__summary__right {
+  text-align: right;
+}
+.card__bottom__summary__right__label {
+  font-size: 1.6rem;
+  color: hsl(28, 10%, 53%);
+}
+.card__bottom__summary__right__value {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
