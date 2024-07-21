@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <a href="#" class="header__left__logo">
+          <img src="./images/logo.svg" alt="Snap logo image" />
+        </a>
+
+        <nav class="header__left__navbar">
+          <ul class="header__left__navbar__list">
+            <li class="header__left__navbar__list__item">
+              <a href="#" class="header__left__navbar__list__item__link">
+                <span>Features</span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Icon arrow down"
+                  class="header__left__navbar__list__item__link__icon--arrow-down"
+                />
+                <img
+                  src="./images/icon-arrow-up.svg"
+                  alt="Icon arrow up"
+                  class="header__left__navbar__list__item__link__icon--arrow-up"
+                />
+              </a>
+            </li>
+
+            <li class="header__left__navbar__list__item">
+              <a href="#" class="header__left__navbar__list__item__link">
+                <span>Company</span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Icon arrow down"
+                  class="header__left__navbar__list__item__link__icon--arrow-down"
+                />
+                <img
+                  src="./images/icon-arrow-up.svg"
+                  alt="Icon arrow up"
+                  class="header__left__navbar__list__item__link__icon--arrow-up"
+                />
+              </a>
+            </li>
+
+            <li class="header__left__navbar__list__item">
+              <a href="#" class="header__left__navbar__list__item__link">
+                <span>Careers</span>
+              </a>
+            </li>
+
+            <li class="header__left__navbar__list__item">
+              <a href="#" class="header__left__navbar__list__item__link">
+                <span>About</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__right">
+        <button class="header__right__button header__right__button--login">
+          Login
+        </button>
+        <button class="header__right__button header__right__button--register">
+          Register
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__left">
+        <!-- Emtpy div for layout purposes -->
+        <div></div>
+
+        <div class="main__left__content">
+          <h1 class="main__left__content__title">Make remote work</h1>
+          <p class="main__left__content__body">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <button class="main__left__content__button">Learn more</button>
+        </div>
+
+        <div class="main__left__clients">
+          <img
+            src="./images/client-databiz.svg"
+            alt="Databiz logo"
+            class="main__left__clients__logo"
+          />
+          <img
+            src="./images/client-audiophile.svg"
+            alt="Audiophile logo"
+            class="main__left__clients__logo"
+          />
+          <img
+            src="./images/client-meet.svg"
+            alt="Meet logo"
+            class="main__left__clients__logo"
+          />
+          <img
+            src="./images/client-maker.svg"
+            alt="Manage logo"
+            class="main__left__clients__logo"
+          />
+        </div>
+      </div>
+
+      <div class="main__right">
+        <img
+          src="./images/image-hero-desktop.png"
+          alt="Hero desktop"
+          class="main__right__illustration main__right__illustration--desktop"
+        />
+        <img
+          src="./images/image-hero-mobile.png"
+          alt="Hero mobile"
+          class="main__right__illustration main__right__illustration--mobile"
+        />
+      </div>
+    </main>
+  </body>
+</html>
