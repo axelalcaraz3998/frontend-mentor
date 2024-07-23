@@ -15,6 +15,10 @@ $almost-black: hsl(0, 0%, 8%);
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media screen and (max-width: 60em) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -28,6 +32,12 @@ body {
   line-height: 1;
 
   background-color: $almost-white;
+
+  @media screen and (max-width: 90em) {
+    width: 100%;
+    padding: 0 2.4rem;
+    margin-bottom: 2.4rem;
+  }
 }
 
 .header {
@@ -37,6 +47,10 @@ body {
 
   padding: 2.4rem 4.2rem;
   margin-bottom: 6.4rem;
+
+  @media screen and (max-width: 90em) {
+    padding: 2.4rem 0;
+  }
 
   &__left {
     display: flex;
@@ -92,6 +106,8 @@ body {
           }
 
           &__dropdown {
+            display: none;
+
             position: absolute;
             top: 100%;
             right: 0;
@@ -127,6 +143,24 @@ body {
                   }
                 }
               }
+            }
+          }
+
+          &.active {
+            .header__left__navbar__list__item__link {
+              &__icon {
+                &--arrow-down {
+                  display: none;
+                }
+
+                &--arrow-up {
+                  display: block;
+                }
+              }
+            }
+
+            .header__left__navbar__list__item__dropdown {
+              display: block;
             }
           }
         }
@@ -172,6 +206,15 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
 
+  @media screen and (max-width: 77.5em) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 60em) {
+    grid-template-columns: 1fr;
+    gap: 4.6rem;
+  }
+
   &__left {
     width: 100%;
     height: auto;
@@ -179,6 +222,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 60em) {
+      justify-content: flex-start;
+      text-align: center;
+      order: 2;
+    }
 
     &__content {
       &__title {
@@ -188,6 +237,15 @@ body {
 
         padding-right: 1.2rem;
         margin-bottom: 4.2rem;
+
+        @media screen and (max-width: 77.5em) {
+          font-size: 6.2rem;
+          padding-right: 0;
+        }
+
+        @media screen and (max-width: 60em) {
+          margin-bottom: 1.2rem;
+        }
       }
 
       &__body {
@@ -195,6 +253,11 @@ body {
 
         padding-right: 9.6rem;
         margin-bottom: 4.2rem;
+
+        @media screen and (max-width: 60em) {
+          padding: 0 14.4rem;
+          margin-bottom: 2.4rem;
+        }
       }
 
       &__button {
@@ -205,6 +268,10 @@ body {
         background-color: $almost-black;
         border: 1px solid $almost-black;
         border-radius: 1.2rem;
+
+        @media screen and (max-width: 60em) {
+          margin-bottom: 4.2rem;
+        }
 
         &:hover {
           cursor: pointer;
@@ -222,6 +289,11 @@ body {
       justify-content: space-between;
       align-items: center;
 
+      @media screen and (max-width: 60em) {
+        width: 64rem;
+        margin: 0 auto;
+      }
+
       img {
         width: auto;
         height: auto;
@@ -232,6 +304,13 @@ body {
   &__right {
     width: 100%;
 
+    @media screen and (max-width: 60em) {
+      width: 64rem;
+      margin: 0 auto;
+
+      order: 1;
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -240,10 +319,18 @@ body {
     &__illustration {
       &--desktop {
         display: block;
+
+        @media screen and (max-width: 60em) {
+          display: none;
+        }
       }
 
       &--mobile {
         display: none;
+
+        @media screen and (max-width: 60em) {
+          display: block;
+        }
       }
     }
   }
