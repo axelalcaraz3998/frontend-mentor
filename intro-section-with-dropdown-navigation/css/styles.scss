@@ -71,6 +71,10 @@ body {
     }
 
     &__navbar {
+      @media screen and (max-width: 46.25em) {
+        display: none;
+      }
+
       &__list {
         display: flex;
         align-items: center;
@@ -189,10 +193,33 @@ body {
 
       &--login {
         border: none;
+
+        @media screen and (max-width: 46.25em) {
+          display: none;
+        }
       }
 
       &--register {
         border: 1px solid $medium-gray;
+
+        @media screen and (max-width: 46.25em) {
+          display: none;
+        }
+      }
+
+      &--menu {
+        display: none;
+        border: none;
+        padding: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        @media screen and (max-width: 46.25em) {
+          display: block;
+        }
       }
     }
   }
@@ -246,6 +273,10 @@ body {
         @media screen and (max-width: 60em) {
           margin-bottom: 1.2rem;
         }
+
+        @media screen and (max-width: 46.25em) {
+          font-size: 4.2rem;
+        }
       }
 
       &__body {
@@ -257,6 +288,10 @@ body {
         @media screen and (max-width: 60em) {
           padding: 0 14.4rem;
           margin-bottom: 2.4rem;
+        }
+
+        @media screen and (max-width: 46.25em) {
+          padding: 0;
         }
       }
 
@@ -289,20 +324,43 @@ body {
       justify-content: space-between;
       align-items: center;
 
+      img {
+        width: auto;
+        height: auto;
+      }
+
       @media screen and (max-width: 60em) {
         width: 64rem;
         margin: 0 auto;
       }
 
-      img {
-        width: auto;
-        height: auto;
+      @media screen and (max-width: 46.25em) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 30em) {
+        img {
+          width: 8.2rem;
+          height: auto;
+        }
+      }
+
+      @media screen and (max-width: 23.75em) {
+        img {
+          width: 6.4rem;
+          height: auto;
+        }
       }
     }
   }
 
   &__right {
     width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     @media screen and (max-width: 60em) {
       width: 64rem;
@@ -311,9 +369,8 @@ body {
       order: 1;
     }
 
-    img {
+    @media screen and (max-width: 46.25em) {
       width: 100%;
-      height: auto;
     }
 
     &__illustration {

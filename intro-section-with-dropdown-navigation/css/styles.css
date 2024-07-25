@@ -63,6 +63,11 @@ body {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 46.25em) {
+  .header__left__navbar {
+    display: none;
+  }
+}
 .header__left__navbar__list {
   display: flex;
   align-items: center;
@@ -147,8 +152,32 @@ body {
 .header__right__button--login {
   border: none;
 }
+@media screen and (max-width: 46.25em) {
+  .header__right__button--login {
+    display: none;
+  }
+}
 .header__right__button--register {
   border: 1px solid hsl(0, 0%, 41%);
+}
+@media screen and (max-width: 46.25em) {
+  .header__right__button--register {
+    display: none;
+  }
+}
+.header__right__button--menu {
+  display: none;
+  border: none;
+  padding: 0;
+}
+.header__right__button--menu img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 46.25em) {
+  .header__right__button--menu {
+    display: block;
+  }
 }
 
 .main {
@@ -201,6 +230,11 @@ body {
     margin-bottom: 1.2rem;
   }
 }
+@media screen and (max-width: 46.25em) {
+  .main__left__content__title {
+    font-size: 4.2rem;
+  }
+}
 .main__left__content__body {
   line-height: 1.5;
   padding-right: 9.6rem;
@@ -210,6 +244,11 @@ body {
   .main__left__content__body {
     padding: 0 14.4rem;
     margin-bottom: 2.4rem;
+  }
+}
+@media screen and (max-width: 46.25em) {
+  .main__left__content__body {
+    padding: 0;
   }
 }
 .main__left__content__button {
@@ -237,18 +276,39 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.main__left__clients img {
+  width: auto;
+  height: auto;
+}
 @media screen and (max-width: 60em) {
   .main__left__clients {
     width: 64rem;
     margin: 0 auto;
   }
 }
-.main__left__clients img {
-  width: auto;
-  height: auto;
+@media screen and (max-width: 46.25em) {
+  .main__left__clients {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 30em) {
+  .main__left__clients img {
+    width: 8.2rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 23.75em) {
+  .main__left__clients img {
+    width: 6.4rem;
+    height: auto;
+  }
 }
 .main__right {
   width: 100%;
+}
+.main__right img {
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 60em) {
   .main__right {
@@ -257,9 +317,10 @@ body {
     order: 1;
   }
 }
-.main__right img {
-  width: 100%;
-  height: auto;
+@media screen and (max-width: 46.25em) {
+  .main__right {
+    width: 100%;
+  }
 }
 .main__right__illustration--desktop {
   display: block;
