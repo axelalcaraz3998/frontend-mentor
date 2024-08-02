@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.advice {
+  width: 54rem;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1.2rem;
+}
+.advice__number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  margin-bottom: 3.6rem;
+}
+.advice__content {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 3.6rem;
+}
+.advice__divider {
+  margin-bottom: 3.6rem;
+}
+.advice__button {
+  width: 6.2rem;
+  height: 6.2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 100%;
+  background-color: hsl(150, 100%, 66%);
+}
+.advice__button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2rem 0.5rem rgba(82, 255, 169, 0.5);
+}
+
+/*# sourceMappingURL=styles.css.map */
