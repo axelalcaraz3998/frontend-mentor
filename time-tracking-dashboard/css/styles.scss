@@ -33,3 +33,177 @@ body {
 
   background-color: $very-dark-blue;
 }
+
+.dashboard {
+  display: flex;
+  gap: 2.6rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__left {
+    width: 24rem;
+
+    &__top {
+      height: 65%;
+      background-color: $blue;
+      border-radius: 1.2rem;
+
+      position: relative;
+      z-index: 999;
+
+      padding: 3.2rem 2.6rem;
+
+      &__picture {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 100%;
+        border: 3px solid #fff;
+
+        margin-bottom: 3.2rem;
+      }
+
+      &__label {
+        font-size: 1.4rem;
+        color: $pale-blue;
+
+        margin-bottom: 1.2rem;
+      }
+
+      &__name {
+        font-size: 3.6rem;
+        font-weight: 300;
+        line-height: 1.15;
+      }
+    }
+
+    &__bottom {
+      position: relative;
+      top: -2.4rem;
+
+      padding-top: 2.4rem;
+      padding-left: 2.4rem;
+
+      height: 35%;
+      background-color: $dark-blue;
+      border-radius: 1.2rem;
+
+      &__list {
+        list-style: none;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__item {
+          font-size: 1.6rem;
+          color: $pale-blue;
+
+          cursor: pointer;
+
+          &--active {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: calc(2.6rem - 2.4rem);
+
+    &__row {
+      display: flex;
+      gap: 2.6rem;
+
+      &__item {
+        width: 24rem;
+        height: 24rem;
+
+        border-radius: 1.2rem;
+        overflow: hidden;
+
+        &__top {
+          position: relative;
+          height: 6.4rem;
+
+          overflow: hidden;
+
+          &--work {
+            background-color: $work;
+          }
+
+          &--play {
+            background-color: $play;
+          }
+
+          &--study {
+            background-color: $study;
+          }
+
+          &--exercise {
+            background-color: $exercise;
+          }
+
+          &--social {
+            background-color: $social;
+          }
+
+          &--self-care {
+            background-color: $self-care;
+          }
+
+          &__icon {
+            position: absolute;
+            right: 1.2rem;
+            top: -0.4rem;
+          }
+        }
+
+        &__bottom {
+          height: calc(100% - 6.4rem);
+          position: relative;
+          top: -2.4rem;
+
+          padding: 2.4rem;
+          background-color: $dark-blue;
+          border-radius: 1.2rem;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          &__heading {
+            display: flex;
+            justify-content: space-between;
+
+            &__button {
+              cursor: pointer;
+              background: none;
+              border: none;
+            }
+          }
+
+          &__content {
+            &__hours {
+              font-size: 5.2rem;
+              font-weight: 300;
+
+              margin-bottom: 1.2rem;
+            }
+
+            &__label {
+              font-size: 1.6rem;
+              color: $pale-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
