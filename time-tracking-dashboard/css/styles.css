@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 67.5em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Rubik", sans-serif;
@@ -28,16 +33,42 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 52.5em) {
+  .dashboard {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    margin: 4.6rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+}
 .dashboard__left {
   width: 24rem;
 }
+@media screen and (max-width: 52.5em) {
+  .dashboard__left {
+    width: 32rem;
+  }
+}
 .dashboard__left__top {
+  width: 100%;
   height: 65%;
   background-color: hsl(246, 80%, 60%);
   border-radius: 1.2rem;
   position: relative;
   z-index: 999;
   padding: 3.2rem 2.6rem;
+}
+@media screen and (max-width: 52.5em) {
+  .dashboard__left__top {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
 }
 .dashboard__left__top__picture {
   width: 8rem;
@@ -46,15 +77,30 @@ body {
   border: 3px solid #fff;
   margin-bottom: 3.2rem;
 }
+@media screen and (max-width: 52.5em) {
+  .dashboard__left__top__picture {
+    margin-bottom: 0;
+  }
+}
 .dashboard__left__top__label {
   font-size: 1.4rem;
   color: hsl(236, 100%, 87%);
   margin-bottom: 1.2rem;
 }
+@media screen and (max-width: 52.5em) {
+  .dashboard__left__top__label {
+    margin-bottom: 0.6rem;
+  }
+}
 .dashboard__left__top__name {
   font-size: 3.6rem;
   font-weight: 300;
   line-height: 1.15;
+}
+@media screen and (max-width: 52.5em) {
+  .dashboard__left__top__name {
+    font-size: 2.4rem;
+  }
 }
 .dashboard__left__bottom {
   position: relative;
@@ -65,12 +111,24 @@ body {
   background-color: hsl(235, 46%, 20%);
   border-radius: 1.2rem;
 }
+@media screen and (max-width: 52.5em) {
+  .dashboard__left__bottom {
+    padding-left: 0;
+  }
+}
 .dashboard__left__bottom__list {
   list-style: none;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 52.5em) {
+  .dashboard__left__bottom__list {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2.4rem 0;
+  }
 }
 .dashboard__left__bottom__list__item {
   font-size: 1.6rem;
@@ -85,15 +143,33 @@ body {
   flex-direction: column;
   gap: 0.2rem;
 }
+@media screen and (max-width: 52.5em) {
+  .dashboard__right {
+    gap: 1.2rem;
+  }
+}
 .dashboard__right__row {
   display: flex;
   gap: 2.6rem;
+}
+@media screen and (max-width: 52.5em) {
+  .dashboard__right__row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
 }
 .dashboard__right__row__item {
   width: 24rem;
   height: 24rem;
   border-radius: 1.2rem;
   overflow: hidden;
+}
+@media screen and (max-width: 52.5em) {
+  .dashboard__right__row__item {
+    width: 32rem;
+  }
 }
 .dashboard__right__row__item__top {
   position: relative;
