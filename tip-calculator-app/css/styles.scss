@@ -17,6 +17,10 @@ $white: hsl(0, 0%, 100%);
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media screen and (max-width: 55em) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -33,6 +37,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 45em) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+    margin: 6.4rem 0;
+  }
 }
 
 .app-title {
@@ -56,6 +69,17 @@ body {
 
   background-color: $white;
   border-radius: 2rem;
+
+  @media screen and (max-width: 45em) {
+    width: 46rem;
+    margin: 0 auto;
+    padding: 4.2rem;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 4.6rem;
+  }
 
   &__left {
     width: 100%;
