@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.app-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-title {
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: 0.8rem;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 9.6rem;
+}
+
+.tip-calculator {
+  width: 86rem;
+  padding: 2.6rem 2.6rem 2.6rem 4.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.6rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+}
+.tip-calculator__left {
+  width: 100%;
+}
+.tip-calculator__left__input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+.tip-calculator__left__input-wrapper:not(:last-child) {
+  margin-bottom: 4.6rem;
+}
+.tip-calculator__left__input-wrapper label {
+  font-size: 1.6rem;
+  color: hsl(186, 14%, 43%);
+}
+.tip-calculator__left__input-wrapper input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  padding: 0.4rem 3.6rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: hsl(189, 41%, 97%);
+}
+.tip-calculator__left__input-wrapper input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: hsl(184, 14%, 56%);
+}
+.tip-calculator__left__input-wrapper input:active,
+.tip-calculator__left__input-wrapper input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.tip-calculator__left__input-wrapper input::-webkit-outer-spin-button,
+.tip-calculator__left__input-wrapper input::-webkit-inner-spin-button {
+  appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tip-calculator__left__input-wrapper input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.tip-calculator__left__input-wrapper img {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.2rem;
+}
+.tip-calculator__left__input-wrapper__tips-container__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.6rem;
+}
+.tip-calculator__left__input-wrapper__tips-container__row:not(:last-of-type) {
+  margin-bottom: 1.6rem;
+}
+.tip-calculator__left__input-wrapper__tips-container__row__tip {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 4.6rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: hsl(183, 100%, 15%);
+}
+.tip-calculator__left__input-wrapper__tips-container__row__tip:hover {
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.tip-calculator__left__input-wrapper__tips-container__row__tip-input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 4.6rem;
+  padding: 0 1.2rem !important;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: hsl(183, 100%, 15%);
+}
+.tip-calculator__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.2rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1rem;
+}
+.tip-calculator__right__data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.tip-calculator__right__data-wrapper__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tip-calculator__right__data-wrapper__data__left__title {
+  font-size: 1.8rem;
+  color: hsl(189, 41%, 97%);
+  margin-bottom: 0.6rem;
+}
+.tip-calculator__right__data-wrapper__data__left__label {
+  font-size: 1.6rem;
+  color: hsl(184, 14%, 56%);
+}
+.tip-calculator__right__data-wrapper__data__amount {
+  font-size: 4.2rem;
+  color: hsl(172, 67%, 45%);
+}
+.tip-calculator__right__button {
+  width: 100%;
+  height: 4.6rem;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 0.6rem;
+  background-color: hsl(172, 67%, 45%);
+}
+.tip-calculator__right__button:hover {
+  cursor: pointer;
+  background-color: hsl(185, 41%, 84%);
+}
+
+/*# sourceMappingURL=styles.css.map */
