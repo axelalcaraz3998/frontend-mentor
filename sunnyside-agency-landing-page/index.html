@@ -33,25 +33,33 @@
   <body>
     <header class="header">
       <nav class="header__nav">
-        <img
-          src="./images/logo.svg"
-          alt="Sunnyside logo"
-          class="header__nav__logo"
-        />
+        <div class="header__nav__left">
+          <img
+            src="./images/logo.svg"
+            alt="Sunnyside logo"
+            class="header__nav__left__logo"
+          />
+        </div>
 
-        <ul class="header__nav__list">
-          <li class="header__nav__list__item">
-            <a href="#" class="header__nav__list__item__link">About</a>
-          </li>
-          <li class="header__nav__list__item">
-            <a href="#" class="header__nav__list__item__link">Services</a>
-          </li>
-          <li class="header__nav__list__item">
-            <a href="#" class="header__nav__list__item__link">Projects</a>
-          </li>
-        </ul>
+        <div class="header__nav__right">
+          <ul class="header__nav__right__list">
+            <li class="header__nav__right__list__item">
+              <a href="#" class="header__nav__right__list__item__link">About</a>
+            </li>
+            <li class="header__nav__right__list__item">
+              <a href="#" class="header__nav__right__list__item__link"
+                >Services</a
+              >
+            </li>
+            <li class="header__nav__right__list__item">
+              <a href="#" class="header__nav__right__list__item__link"
+                >Projects</a
+              >
+            </li>
+          </ul>
 
-        <button class="header__nav__button">Contact</button>
+          <button class="header__nav__right__button">Contact</button>
+        </div>
       </nav>
 
       <h1 class="header__title">We are creatives</h1>
@@ -68,11 +76,11 @@
         <a href="#" class="feature__description__link"> Learn more</a>
       </div>
 
-      <div class="feature__image"></div>
+      <div class="feature__image feature__image--transform"></div>
     </section>
 
     <section class="feature">
-      <div class="feature__image"></div>
+      <div class="feature__image feature__image--stand-out"></div>
 
       <div class="feature__description">
         <h2 class="feature__description__title">
@@ -88,7 +96,9 @@
     </section>
 
     <section class="feature--double">
-      <div class="feature--double__description">
+      <div
+        class="feature--double__description feature--double__description--graphic-design"
+      >
         <h2 class="feature--double__description__title">Graphic design</h2>
         <p class="feature--double__description__body">
           Great design makes you memorable. We deliver artwork that underscores
@@ -96,7 +106,9 @@
         </p>
       </div>
 
-      <div class="feature--double__description">
+      <div
+        class="feature--double__description feature--double__description--photography"
+      >
         <h2 class="feature--double__description__title">Photography</h2>
         <p class="feature--double__description__body">
           Increase your credibility by getting the most stunning, high-quality

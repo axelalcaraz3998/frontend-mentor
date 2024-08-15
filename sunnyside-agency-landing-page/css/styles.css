@@ -16,6 +16,166 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header {
+  width: 100%;
+  height: 76rem;
+  padding: 4.2rem;
+  background: url("../images/desktop/image-header.jpg") center no-repeat;
+  background-size: cover;
+}
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__left__logo {
+  width: 16rem;
+  cursor: pointer;
+}
+.header__nav__right {
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+.header__nav__right__list {
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+  list-style: none;
+}
+.header__nav__right__list__item__link {
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.header__nav__right__list__item__link:hover {
+  text-decoration: underline;
+}
+.header__nav__right__button {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  padding: 1.4rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 100rem;
+  border: none;
+}
+.header__nav__right__button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: hsl(0, 0%, 100%);
+}
+.header__title {
+  font-family: "Fraunces", serif;
+  font-size: 5.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: 9.6rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.feature__description {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.6rem;
+}
+.feature__description__title {
+  font-family: "Fraunces", serif;
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  line-height: 1.15;
+}
+.feature__description__body {
+  color: hsl(232, 10%, 55%);
+  line-height: 1.3;
+}
+.feature__description__link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+.feature__description__link:hover {
+  text-decoration: underline;
+}
+.feature__image {
+  width: 100%;
+  height: 64rem;
+}
+.feature__image--transform {
+  background: url("../images/desktop/image-transform.jpg") center no-repeat;
+  background-size: cover;
+}
+.feature__image--stand-out {
+  background: url("../images/desktop/image-stand-out.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.feature--double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.feature--double__description {
+  width: 100%;
+  height: 56rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3.2rem;
+}
+.feature--double__description__title {
+  width: 50%;
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.15;
+}
+.feature--double__description__body {
+  width: 50%;
+  color: hsl(232, 10%, 55%);
+  line-height: 1.3;
+  margin-bottom: 4.6rem;
+}
+.feature--double__description--graphic-design {
+  background: url("../images/desktop/image-graphic-design.jpg") center no-repeat;
+  background-size: cover;
+}
+.feature--double__description--graphic-design .feature--double__description__title {
+  color: hsl(167, 40%, 24%);
+}
+.feature--double__description--graphic-design .feature--double__description__body {
+  color: hsl(167, 40%, 24%);
+}
+.feature--double__description--photography {
+  background: url("../images/desktop/image-photography.jpg") center no-repeat;
+  background-size: cover;
+}
+.feature--double__description--photography .feature--double__description__title {
+  color: hsl(198, 62%, 26%);
+}
+.feature--double__description--photography .feature--double__description__body {
+  color: hsl(198, 62%, 26%);
 }
 
 /*# sourceMappingURL=styles.css.map */
